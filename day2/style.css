@@ -1,0 +1,74 @@
+/* CSS Reset */
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cornflowerblue;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 1rem;
+    font-size: larger;
+    border: none;
+}
+
+form a {
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    font-size: larger;
+    text-decoration: none;
+    color: royalblue;
+    font-weight: bold;
+}
+
+form {
+    position: relative;
+    text-align: center;
+}
+
+.list {
+    margin-top: 3rem;
+}
+.list-item {
+    padding: 0.3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+.del-btn {
+    font-size: xx-large;
+    font-weight: bold;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.list-item:hover .del-btn, .list-item:focus .del-btn {
+    visibility: visible;
+}
+
+.list-item :first-child {
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.mark-done {
+    color: black;
+    text-decoration: line-through;
+}
