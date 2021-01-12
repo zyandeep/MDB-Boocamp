@@ -46,16 +46,16 @@ form {
     margin-top: 3rem;
 }
 .list-item {
-    padding: 0.3rem;
+    padding: 0.3rem 2rem;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid whitesmoke;
     display: flex;
     justify-content: space-between;
     color: whitesmoke;
+    font-weight: bold;
 }
 .del-btn {
     font-size: xx-large;
-    font-weight: bold;
     visibility: hidden;
     cursor: pointer;
 }
@@ -66,9 +66,16 @@ form {
 
 .list-item :first-child {
     text-transform: capitalize;
+    font-size: x-large;
     cursor: pointer;
 }
 .mark-done {
     color: black;
     text-decoration: line-through;
+}
+.list p {
+    text-align: center;
+    padding: 1rem 0;
+    color: #dddddd;
+    font-size: x-large;
 }
